@@ -1,0 +1,56 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+     >
+    
+   
+    <RelativeLayout
+       style="@style/TitleLayout">
+
+        <Button
+            android:id="@+id/home_button"
+            style="@style/home_button"/>
+
+        <TextView
+            style="@style/TitleTextView"
+            android:text="@string/connection_options_help"/>
+        
+        <Button
+            android:id="@+id/menu_button"
+            style="@style/DropDownMenuButton" 
+           />
+
+    </RelativeLayout>
+  
+    
+   		 
+    
+
+		    <!--<TableRow
+		          style="@style/OptionsRow" >
+		           
+		           <Button
+		               android:id="@+id/help_connect"
+		                style="@style/OptionsButton"
+		               android:text="@string/help_connect" 
+		               android:onClick="onClickHelpConnect"/>
+		              
+		       </TableRow>-->
+		       
+		        <TableRow
+		          style="@style/OptionsRow" >
+		           
+		           <Button
+		               android:id="@+id/sensorPhotos"
+		                style="@style/OptionsButton"
+		               android:text="@string/sensorPhotos" 
+		               />
+		              
+		       </TableRow>
+			
+		
+  
+
+</TableLayout>

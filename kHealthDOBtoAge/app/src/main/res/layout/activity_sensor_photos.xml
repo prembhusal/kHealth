@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".SensorPhotosActivity" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        style="@style/TitleLayout" >
+
+        <Button
+            android:id="@+id/home_button"
+            style="@style/home_button" />
+
+        <Button
+            android:id="@+id/menu_button"
+            style="@style/DropDownMenuButton" />
+
+        <TextView
+            style="@style/TitleTextView"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/sensorPhotos" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/LinearLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+           <!-- <ImageView
+                android:id="@+id/nodeImage"
+                android:layout_width="176dp"
+                android:layout_height="290dp"
+                android:layout_margin="20dp"
+                android:layout_marginTop="82dp"
+                android:contentDescription="@string/pictureOfSensors"
+                android:src="@drawable/node" /> -->
+
+           <!-- <TextView
+                style="@style/ButtonText"
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/text_node"
+                android:textSize="20sp" />-->
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/sensordroneImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/pictureOfSensors"
+                android:src="@drawable/foobot" />
+
+            <TextView
+                style="@style/ButtonText"
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/text_foobot"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

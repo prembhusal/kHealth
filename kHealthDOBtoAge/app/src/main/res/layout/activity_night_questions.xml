@@ -1,0 +1,110 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".AlarmSetupActivity" >
+
+    <RelativeLayout style="@style/TitleLayout" >
+
+        <Button
+            android:id="@+id/home_button"
+            style="@style/home_button" />
+
+        <TextView
+            style="@style/TitleTextView"
+            android:text="@string/nightQuestions" />
+
+        <Button
+            android:id="@+id/menu_button"
+            style="@style/DropDownMenuButton" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding_medium"
+        android:layout_marginRight="@dimen/padding_medium"
+        android:layout_marginTop="@dimen/padding_medium"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/coughLevel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/coughWheezingNight"
+            android:textColor="@color/blue_text"
+            android:textSize="25sp" />
+
+        <Spinner
+            android:id="@+id/coughLevelSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" >
+
+            <requestFocus />
+        </Spinner>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding_medium"
+        android:layout_marginRight="@dimen/padding_medium"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/takeAlbuterolNight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/takeAlbuterolNight"
+            android:textColor="@color/blue_text"
+            android:textSize="25sp" />
+
+        <Spinner
+            android:id="@+id/takeAlbuterolNightSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" >
+
+            <requestFocus />
+        </Spinner>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding_medium"
+        android:layout_marginRight="@dimen/padding_medium"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/submitNQ"
+            style="@style/SaveButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/ic_next_item"
+            android:text="@string/submit" />
+
+        <Button
+            android:id="@+id/dayQuestions"
+            style="@style/SaveButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/ic_next_item"
+            android:text="@string/dayQuestion"
+            android:visibility="gone" />
+        
+          <Button
+              android:id="@+id/previousCurrentSymptoms"
+              style="@style/SaveButton"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="10dp"
+              android:drawableLeft="@drawable/ic_previous"
+              android:text="@string/currentSymptoms" />
+
+    </LinearLayout>
+
+</LinearLayout>

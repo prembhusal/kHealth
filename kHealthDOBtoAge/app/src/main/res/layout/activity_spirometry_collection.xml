@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <RelativeLayout
+        style="@style/TitleLayout"
+        android:layout_width="match_parent">
+
+        <Button
+            android:id="@+id/home_button"
+            style="@style/home_button" />
+
+        <TextView
+            style="@style/TitleTextView"
+            android:text="@string/title_activity_spirometry" />
+
+        <Button
+            android:id="@+id/menu_button"
+            style="@style/DropDownMenuButton" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:textSize="20sp"
+            android:text="@string/label_fev"
+            android:textColor="@color/blue_text"
+        />
+
+        <EditText
+            android:id="@+id/editText_fev"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="@string/spirometry_hint"
+            android:inputType="numberDecimal"
+        />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding_medium"
+        android:layout_marginRight="@dimen/padding_medium"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/spirometry_next"
+            style="@style/SaveButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:drawableEnd="@drawable/ic_next_item"
+            android:text="@string/nextQuestion"
+            android:enabled="false"
+        />
+
+        <!--<Button
+            android:id="@+id/spirometry_previous"
+            style="@style/SaveButton"
+            android:layout_width="fill_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_previous"
+            android:text="@string/previousQuestion" /> -->
+
+    </LinearLayout>
+
+</LinearLayout>

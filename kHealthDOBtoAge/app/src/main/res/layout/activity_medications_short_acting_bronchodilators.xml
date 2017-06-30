@@ -1,0 +1,114 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        style="@style/TitleLayout"
+        android:layout_width="match_parent" >
+
+        <Button
+            android:id="@+id/home_button"
+            style="@style/home_button" />
+
+        <TextView
+            style="@style/TitleTextView"
+            android:text="@string/medications"
+            android:textSize="30sp"/>
+
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Short Acting Bronchodilators"
+            android:textColor="@color/blue_text"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Albuterol"
+        android:textSize="30sp"
+        android:id="@+id/cb1" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ventolin"
+        android:textSize="30sp"
+        android:id="@+id/cb2" />
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Proair"
+        android:textSize="30sp"
+        android:id="@+id/cb3" />
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Xoponex"
+        android:textSize="30sp"
+        android:id="@+id/cb4" />
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Atrovent"
+        android:textSize="30sp"
+        android:id="@+id/cb5" />
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Combivent"
+        android:textSize="30sp"
+        android:id="@+id/cb6" />
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Duoneb"
+        android:textSize="30sp"
+        android:id="@+id/cb7" />
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding_medium"
+        android:layout_marginRight="@dimen/padding_medium"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/options_next2"
+            style="@style/SaveButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/ic_next_item"
+            android:text="NEXT" />
+        <Button
+            android:id="@+id/previousQuestion"
+            style="@style/SaveButton"
+            android:layout_width="fill_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_previous"
+            android:text="PREVIOUS" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

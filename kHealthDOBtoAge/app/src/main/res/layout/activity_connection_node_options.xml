@@ -1,0 +1,64 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFFFF"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        style="@style/TitleLayout"
+        android:layout_width="match_parent" >
+
+        <Button
+            android:id="@+id/back_button"
+            style="@style/back_button" />
+
+        <TextView
+            style="@style/TitleTextView"
+            android:text="@string/node_connect" />
+
+        <Button
+            android:id="@+id/menu_button"
+            style="@style/DropDownMenuButton" />
+    </RelativeLayout>
+
+    <TableLayout
+        android:id="@+id/options"
+        android:layout_width="match_parent"
+        android:scrollbars="vertical" >
+
+        <TableRow style="@style/OptionsRow" >
+
+            <Button
+                android:id="@+id/options_connect"
+                style="@style/OptionsButton"
+                android:background="@drawable/button_blue"
+                android:text="@string/connection_options_connect" />
+        </TableRow>
+
+        <TableRow style="@style/OptionsRow" >
+
+            <Button
+                android:id="@+id/options_disconnect"
+                style="@style/OptionsButton"
+                android:text="@string/connection_options_disconnect" />
+        </TableRow>
+
+        <TableRow style="@style/OptionsRow" >
+
+            <Button
+                android:id="@+id/batteryLevel"
+                style="@style/OptionsButton"
+                android:text="@string/getBatteryLevel" />
+        </TableRow>
+
+        <TableRow style="@style/OptionsRow" >
+
+            <Button
+                android:id="@+id/next_node_options"
+                style="@style/OptionsButton"
+                android:drawableRight="@drawable/ic_next_item"
+                android:text="@string/NO_reading" />
+        </TableRow>
+    </TableLayout>
+
+</TableLayout>

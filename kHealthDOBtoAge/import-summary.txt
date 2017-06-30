@@ -1,0 +1,91 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+* .classpath.r39
+* .classpath.r55
+* androidplot-core-0.5.2.jar
+* build.xml
+* connection_options-web.png
+* generateBuildXML.sh
+* ic_connection_options-web.png
+* ic_help-web.png
+* ic_launcher-web.png
+* ic_person-web.png
+* ic_previous_item-web.png
+* ic_settings-web.png
+* install.sh
+* proguard-project.txt
+
+Replaced Jars with Dependencies:
+--------------------------------
+The importer recognized the following .jar files as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the .jar file in your project was of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the jar replacement in the import wizard and try again:
+
+android-support-v4.jar => com.android.support:support-v4:21.0.3
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+* AirQualityIndex.php_Zone.Identifier => AirQualityIndex.php_zone.identifier
+* AndroidManifest.xml => app\src\main\AndroidManifest.xml
+* assets\ => app\src\main\assets
+* libs\achartengine-0.7.0.jar => app\libs\achartengine-0.7.0.jar
+* libs\activation.jar => app\libs\activation.jar
+* libs\additionnal.jar => app\libs\additionnal.jar
+* libs\android-sdk-1.3.1.jar => app\libs\android-sdk-1.3.1.jar
+* libs\android-support-v13.jar => app\libs\android-support-v13.jar
+* libs\Android.API-1.7.jar => app\libs\Android.API-1.7.jar
+* libs\androidplot-core-0.5.2.jar => app\libs\androidplot-core-0.5.2.jar
+* libs\androjena_0.5.jar => app\libs\androjena_0.5.jar
+* libs\arqoid_0.5.jar => app\libs\arqoid_0.5.jar
+* libs\commons-codec-1.8.jar => app\libs\commons-codec-1.8.jar
+* libs\GraphView-3.1.3.jar => app\libs\GraphView-3.1.3.jar
+* libs\HxMBT.jar => app\libs\HxMBT.jar
+* libs\icu4j-3.4.5.jar => app\libs\icu4j-3.4.5.jar
+* libs\iri-0.8.jar => app\libs\iri-0.8.jar
+* libs\log4j-api-2.0-beta7.jar => app\libs\log4j-api-2.0-beta7.jar
+* libs\mail.jar => app\libs\mail.jar
+* libs\owlapi-bin.jar => app\libs\owlapi-bin.jar
+* libs\pellet-owlapiv3.jar => app\libs\pellet-owlapiv3.jar
+* libs\SDAndroidLib-1.1.1 .jar => app\libs\SDAndroidLib-1.1.1 .jar
+* libs\signpost-commonshttp4-1.2.1.1.jar => app\libs\signpost-commonshttp4-1.2.1.1.jar
+* libs\signpost-core-1.2.1.1.jar => app\libs\signpost-core-1.2.1.1.jar
+* libs\slf4j-android-1.6.1-RC1.jar => app\libs\slf4j-android-1.6.1-RC1.jar
+* lint.xml => app\lint.xml
+* res\ => app\src\main\res\
+* src\ => app\src\main\java\
+* fitbit.png_Zone.Identifier => fitbit.png_zone.identifier
+* images.jpg_Zone.Identifier => images.jpg_zone.identifier
+* nhaler.png_Zone.Identifier => nhaler.png_zone.identifier
+* Pollen.php_Zone.Identifier => Pollen.php_zone.identifier
+* rewardsaa.png_Zone.Identifier => rewardsaa.png_zone.identifier
+* rewardsbaah.png_Zone.Identifier => rewardsbaah.png_zone.identifier
+* rewardsbah.png_Zone.Identifier => rewardsbah.png_zone.identifier
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)

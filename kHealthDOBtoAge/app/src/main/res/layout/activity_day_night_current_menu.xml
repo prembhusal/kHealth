@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    
+    android:orientation="vertical" >
+
+      <RelativeLayout style="@style/TitleLayout" >
+
+          <Button
+              android:id="@+id/home_button"
+              style="@style/home_button" />
+
+          <Button
+              android:id="@+id/menu_button"
+              style="@style/DropDownMenuButton" />
+
+          <TextView
+              style="@style/TitleTextView"
+              android:gravity="center|start"
+              android:text="Symptoms" />
+
+      </RelativeLayout>
+
+    <CheckBox
+        android:id="@+id/Day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:text="Day"
+        android:textColor="#33B5E5"
+        android:textSize="25sp"
+        android:checked="false" />
+    
+    <CheckBox
+        android:id="@+id/Night"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:text="Night"
+        android:textColor="#33B5E5"
+        android:textSize="25sp" />
+
+    <CheckBox
+        android:id="@+id/Current"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:text="@string/current_check"
+        android:textColor="#33B5E5"
+        android:textSize="25sp"
+        android:checked="true"
+        android:enabled="false" />
+
+    <Button
+        android:id="@+id/day_night_current_next"
+        style="@style/SaveButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/ic_next_item"
+        android:text="Questionnaire"
+        android:textSize="25sp" />
+
+</LinearLayout>

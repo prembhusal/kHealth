@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+    This is a modified version of a class from the IO Schedule app.
+    The original copyright and license information follows.
+
+    Copyright 2010 Google Inc.
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+         http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <!-- Base application theme is the default theme. -->
+
+    <style name="AppTheme" parent="android:Theme.Light" />
+
+    <!-- Custom dialog style -->
+
+    <style name="Dialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+    <style name="DialogText">
+        <item name="android:textColor">#FF000000</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="DialogText.Title">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- End of Custom dialog styles -->
+
+
+    <!-- Custom alert dialog styles -->
+    <style name="AlertDialogCustom" parent="@android:style/Theme.Dialog">
+        <item name="android:textColor">#00FF00</item>
+        <item name="android:typeface">monospace</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <!-- End of aelrt Custom dialog styles -->
+
+
+    <!-- Custom OnOof table Layout styles -->
+    <style name="tlOnOff" parent="@android:style/Theme.Dialog">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingTop">10dp</item>
+    </style>
+
+    <style name="TextView_Observations_values">
+        <item name="android:minWidth">45dp</item>
+        <item name="android:height">100dp</item>
+    </style>
+
+    <!-- End of OnOof table Layout styles -->
+
+    <style name="TitleLayout">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/title_height</item>
+        <item name="android:background">@drawable/blue_gradient</item>
+    </style>
+
+    <style name="TitleTextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_marginLeft">65dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginTop">@dimen/title_text_top</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
+    </style>
+
+    <style name="CustomTitleTextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginTop">@dimen/title_text_top</item>
+    </style>
+
+    <style name="OptionsButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/button_blue</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">left</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
+    </style>
+
+    <style name="SaveButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/button_blue</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
+    </style>
+
+    <style name="ButtonText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#33B5E5</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_margin">3dp</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+
+    <style name="OptionsRow">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">3dp</item>
+    </style>
+    <!-- Variation on the Light theme that turns off the title -->
+    <style name="Theme.D1t" parent="android:style/Theme.Light">
+        <item name="android:windowNoTitle">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="Theme.D1" parent="android:style/Theme.Light">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="Theme.D1dialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="Theme.D1tranlucent" parent="android:style/Theme.Translucent">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+
+    <style name="TitleBar">
+        <item name="android:id">@id/title_container</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/title_height</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="TitleBarAction">
+        <item name="android:layout_width">@dimen/title_height</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:background">@null</item>
+        <item name="android:scaleType">fitXY</item>
+        <!-- <item name="android:background">@drawable/ic_launcher</item> -->
+    </style>
+
+    <style name="TitleBarProgressIndicator" parent="@android:style/Widget.ProgressBar.Small">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">14dip</item>
+        <item name="android:layout_marginRight">15dip</item>
+        <item name="android:layout_marginTop">14dip</item>
+        <item name="android:indeterminate">true</item>
+    </style>
+
+    <style name="TitleBarSeparator">
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:background">@color/title_separator</item>
+    </style>
+
+    <style name="EditSeparator">
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">32dp</item>
+        <item name="android:background">#888</item>
+    </style>
+
+    <style name="TitleBarLogo">
+        <item name="android:id">@id/title_logo</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="TitleBarSpring">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="TitleBarText">
+        <item name="android:id">@id/title_text</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">@dimen/text_size_medium</item>
+        <item name="android:paddingLeft">1dip</item>
+        <item name="android:paddingRight">12dip</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/title_text</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="TextBody">
+        <item name="android:textSize">15sp</item>
+        <item name="android:lineSpacingMultiplier">1.1</item>
+        <item name="android:textColor">@android:color/secondary_text_light</item>
+    </style>
+
+    <style name="Heading_textView">
+        <item name="android:textSize">30sp</item>
+        <item name="android:lineSpacingMultiplier">1.1</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">45dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+    </style>
+
+    <style name="back_button">
+        <item name="android:layout_gravity">left</item>
+        <item name="android:layout_width">48dp</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:background">@null</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:onClick">onClickBack</item>
+        <item name="android:drawableLeft">@drawable/ic_previous_light</item>
+    </style>
+
+    <style name="home_button">
+        <item name="android:layout_gravity">left</item>
+        <item name="android:layout_width">48dp</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:background">@null</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:onClick">onClickHome</item>
+        <item name="android:drawableLeft">@drawable/ic_previous_light</item>
+    </style>
+
+    <style name="DropDownMenuButton">
+        <item name="android:layout_gravity">right</item>
+        <item name="android:layout_width">48dp</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:background">@null</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:drawableTop">@drawable/menu_button</item>
+        <item name="android:onClick">onClickMenu</item>
+    </style>
+
+    <!--  Spinner row styles  -->
+    <style name="SpinnerRow">
+        <item name="android:minWidth">246dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:textColor">@color/sky_blue</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:paddingLeft">4dp</item>
+
+    </style>
+
+    <style name="SummaryText">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <!-- Showcase View -->
+
+    <style name="CustomShowcaseTheme" parent="ShowcaseView.Light">
+        <item name="sv_backgroundColor">#3300A621</item>
+        <item name="sv_showcaseColor">#00801A</item>
+        <item name="sv_buttonText">Hide</item>
+        <item name="sv_tintButtonColor">false</item>
+        <item name="sv_titleTextAppearance">@style/CustomTitle</item>
+    </style>
+
+    <style name="CustomShowcaseTheme2" parent="ShowcaseView">
+        <item name="sv_backgroundColor">#e51249d9</item>
+        <item name="sv_showcaseColor">#25467A</item>
+        <item name="sv_buttonText">Close</item>
+        <item name="sv_titleTextAppearance">@style/CustomTitle2</item>
+        <item name="sv_detailTextAppearance">@style/CustomText2</item>
+    </style>
+
+    <style name="CustomShowcaseTheme3" parent="ShowcaseView.Light">
+        <item name="sv_backgroundColor">#c8ed680f</item>
+        <item name="sv_showcaseColor">#ed680f</item>
+        <item name="sv_buttonText">Okay </item>
+        <item name="sv_tintButtonColor">false</item>
+        <item name="sv_titleTextAppearance">@style/CustomTitle2</item>
+        <item name="sv_detailTextAppearance">@style/CustomText2</item>
+    </style>
+
+    <style name="CustomTitle" parent="TextAppearance.ShowcaseView.Title">
+        <item name="android:textColor">#00801A</item>
+    </style>
+
+    <style name="CustomTitle2" parent="TextAppearance.ShowcaseView.Title.Light">
+        <item name="android:textColor">#deffffff</item>
+    </style>
+
+    <style name="CustomText2" parent="TextAppearance.ShowcaseView.Detail.Light">
+        <item name="android:textColor">#8affffff</item>
+    </style>
+
+    <style name="ListItemBigtext">
+        <item name="android:textColor">#25467A</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+
+    <style name="ListItemSubtext">
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+        <item name="android:textColor">?android:attr/textColorSecondary</item>
+    </style>
+
+
+</resources>

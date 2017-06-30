@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFFFF"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@drawable/blue_gradient" >
+
+        <Button
+            android:id="@+id/home_button"
+            style="@style/home_button"
+            android:onClick="onClickHome" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/title_text_left"
+            android:layout_marginTop="@dimen/title_text_top"
+            android:text="@string/alert"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <ImageButton
+            android:id="@+id/menu_button"
+            style="@style/MenuButton"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/menu_button"
+            android:onClick="onClickMenu" />
+    </RelativeLayout>
+    
+    <LinearLayout
+        android:id="@+id/riskBackground"
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        android:background="#00FF00"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/riskTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="Benign Risk"
+            android:textColor="#FFF"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/alertListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="#FFF" >
+    </ListView>
+
+</TableLayout>

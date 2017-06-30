@@ -1,0 +1,35 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFFFF"
+    android:orientation="vertical" >
+
+    <RelativeLayout style="@style/TitleLayout" >
+
+        <Button
+            android:id="@+id/home_button"
+            style="@style/home_button" />
+
+        <TextView
+            android:id="@+id/title_all_observations_graph"
+            style="@style/TitleTextView"
+            android:text="@string/comments_display" />
+
+        <Button
+            android:id="@+id/menu_button"
+            style="@style/DropDownMenuButton" />
+    </RelativeLayout>
+
+  
+    
+      <ListView 
+         android:id="@+id/commentsList"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="left"
+        android:padding="10dp"
+        >
+          
+      </ListView>
+
+</LinearLayout>

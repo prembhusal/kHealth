@@ -1,0 +1,70 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFFFF"
+    android:orientation="vertical" >
+
+    <RelativeLayout style="@style/TitleLayout" >
+
+        <Button
+            android:id="@+id/back_button"
+            style="@style/back_button" />
+
+        <TextView
+            style="@style/TitleTextView"
+            android:text="@string/observations" />
+
+        <Button
+            android:id="@+id/menu_button"
+            style="@style/DropDownMenuButton" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/ButtonText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" 
+                android:text="@string/sensorDroneReadings">
+                
+            </TextView>
+
+            <TableLayout
+                android:id="@+id/tlOnOff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp" >
+            </TableLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding_medium"
+                android:layout_marginRight="@dimen/padding_medium"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/takeNodeInput"
+                    style="@style/SaveButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:drawableRight="@drawable/ic_next_item"
+                    android:text="@string/takeNodeInput" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</TableLayout>

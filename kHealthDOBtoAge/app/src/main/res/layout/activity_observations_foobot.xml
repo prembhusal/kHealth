@@ -1,0 +1,234 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFFFF"
+    android:orientation="vertical" >
+
+    <RelativeLayout style="@style/TitleLayout" >
+
+        <Button
+            android:id="@+id/back_button"
+            style="@style/back_button" />
+
+        <TextView
+            style="@style/TitleTextView"
+            android:text="@string/FoobotReadings" />
+
+        <Button
+            android:id="@+id/menu_button"
+            style="@style/DropDownMenuButton" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/pc"
+                    style="@style/ButtonText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ParticulateMatter"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/particulateMatter"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding_large"
+                    android:layout_marginRight="@dimen/padding_large"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/textview_rectangle"
+                    android:gravity="center"
+                    android:text="@string/particulateMatter"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/Temperature"
+                    style="@style/ButtonText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Temperature"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/temperature"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding_large"
+                    android:layout_marginRight="@dimen/padding_large"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/textview_rectangle"
+                    android:gravity="center"
+                    android:text="@string/temperature"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/Humidity"
+                    style="@style/ButtonText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Humidity"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/humidity"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding_large"
+                    android:layout_marginRight="@dimen/padding_large"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/textview_rectangle"
+                    android:gravity="center"
+                    android:text="@string/humidity"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/CarbonDioxide"
+                    style="@style/ButtonText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/CarbonDioxide"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/carbonDioxide"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding_large"
+                    android:layout_marginRight="@dimen/padding_large"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/textview_rectangle"
+                    android:gravity="center"
+                    android:text="@string/carbonDioxide"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/VolatileOrganicCompounds"
+                    style="@style/ButtonText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/VolatileOrganicCompounds"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/volatileOrganicCompounds"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding_large"
+                    android:layout_marginRight="@dimen/padding_large"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/textview_rectangle"
+                    android:gravity="center"
+                    android:text="@string/volatileOrganicCompounds"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/Pollution"
+                    style="@style/ButtonText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Pollution"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/pollution"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding_large"
+                    android:layout_marginRight="@dimen/padding_large"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/textview_rectangle"
+                    android:gravity="center"
+                    android:text="@string/pollution"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+            </LinearLayout>
+
+
+
+
+
+            <!--<LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding_medium"
+                android:layout_marginRight="@dimen/padding_medium"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" >
+                <Button
+                    android:id="@+id/finish"
+                    style="@style/SaveButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:drawableRight="@drawable/ic_next_item"
+                    android:text="Done" />
+
+                <Button
+                    android:id="@+id/previousNODE"
+                    style="@style/SaveButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:drawableLeft="@drawable/ic_previous"
+                    android:text="@string/takeNodeInput" />
+            </LinearLayout>-->
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

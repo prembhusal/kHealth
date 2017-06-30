@@ -1,0 +1,125 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        style="@style/TitleLayout"
+        android:layout_width="match_parent" >
+
+        <Button
+            android:id="@+id/back_button"
+            style="@style/back_button" />
+
+        <TextView
+            style="@style/TitleTextView"
+            android:text="@string/record_wheezing" />
+
+        <Button
+            android:id="@+id/menu_button"
+            style="@style/DropDownMenuButton" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/record"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:background="@drawable/login_button"
+            android:src="@drawable/record" >
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/play"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:background="@drawable/login_button"
+            android:src="@drawable/play" >
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/stop"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:background="@drawable/login_button"
+            android:src="@drawable/stop" >
+        </ImageButton>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/instructRecord"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/padding_large"
+                android:paddingRight="@dimen/padding_large"
+                android:paddingTop="@dimen/padding_large"
+                android:text="@string/instructRecord"
+                android:textColor="#33B5E5"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/instructStop"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/padding_large"
+                android:paddingRight="@dimen/padding_large"
+                android:paddingTop="@dimen/padding_large"
+                android:text="@string/instructStop"
+                android:textColor="#33B5E5"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/instructPlay"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/padding_large"
+                android:paddingRight="@dimen/padding_large"
+                android:paddingTop="@dimen/padding_large"
+                android:text="@string/instructPlay"
+                android:textColor="#33B5E5"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/instructSave"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/padding_large"
+                android:paddingRight="@dimen/padding_large"
+                android:paddingTop="@dimen/padding_large"
+                android:text="@string/instructSave"
+                android:textColor="#33B5E5"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/save_wheezing_recording"
+                style="@style/SaveButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="30dp"
+                android:text="@string/save" >
+            </Button>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

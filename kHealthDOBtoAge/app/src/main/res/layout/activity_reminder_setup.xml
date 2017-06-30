@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".AlarmSetupActivity" >
+
+    <RelativeLayout style="@style/TitleLayout" >
+
+        <Button
+            android:id="@+id/home_button"
+            style="@style/home_button" />
+
+        <TextView
+            style="@style/TitleTextView"
+            android:layout_marginLeft="50dp"
+            android:text="Medication Reminders" />
+
+        <Button
+            android:id="@+id/menu_button"
+            style="@style/DropDownMenuButton" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/medication_tracker"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/list_alarm"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+        </ListView>
+        
+        <Button 
+            android:id="@+id/button_add_alarm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:text="Add reminder"
+            android:onClick="onClick"
+            style="@style/SaveButton"
+            android:layout_weight="0"
+        />
+        
+    </LinearLayout>
+
+</LinearLayout>

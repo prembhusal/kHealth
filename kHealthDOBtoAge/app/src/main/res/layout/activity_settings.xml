@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFFFF"
+    android:orientation="vertical" >
+
+    <RelativeLayout style="@style/TitleLayout" >
+
+        <Button
+            android:id="@+id/home_button"
+            style="@style/home_button" />
+
+        <TextView
+            style="@style/TitleTextView"
+            android:text="@string/Settings" />
+
+        <Button
+            android:id="@+id/menu_button"
+            style="@style/DropDownMenuButton" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <!-- <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="@style/ButtonText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:text="@string/connection_options" >
+                </TextView>
+            </LinearLayout>  -->
+
+            <!-- <LinearLayout
+                android:id="@+id/button_connection_options"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_border"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/sensor_drone_connections"
+                    style="@style/SaveButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:drawableRight="@drawable/ic_next_item"
+                    android:gravity="left"
+                    android:text="@string/sensor_drone_connect" >
+                </Button>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/blue_text" />
+
+                <Button
+                    android:id="@+id/node_connections"
+                    style="@style/SaveButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:drawableRight="@drawable/ic_next_item"
+                    android:gravity="left"
+                    android:text="@string/node_connect" >
+                </Button>
+            </LinearLayout> -->
+
+            <!--<LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="@style/ButtonText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:text="@string/manageUsers" >
+                </TextView>
+            </LinearLayout>-->
+
+            <!--<LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_border"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/createNewUser"
+                    style="@style/SaveButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:drawableRight="@drawable/ic_next_item"
+                    android:gravity="left"
+                    android:text="@string/createNewUser" >
+                </Button>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/blue_text" />
+
+                <Button
+                    android:id="@+id/changeUser"
+                    style="@style/SaveButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:drawableRight="@drawable/ic_next_item"
+                    android:gravity="left"
+                    android:text="@string/changeUser" >
+                </Button>
+            </LinearLayout>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/ButtonText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"    
+                    android:text="@string/alarm" >
+                </TextView>
+                
+                
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_border"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/setupAlarm"
+                    style="@style/SaveButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:drawableRight="@drawable/ic_next_item"
+                    android:gravity="left"
+                    android:text="@string/setupAlarm" >
+                </Button>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

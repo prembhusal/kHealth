@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFFFF"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        style="@style/TitleLayout"
+        android:layout_width="match_parent" >
+
+        <Button
+            android:id="@+id/home_button"
+            style="@style/home_button" />
+
+        <TextView
+            style="@style/TitleTextView"
+            android:text="@string/select_graph" />
+
+        <Button
+            android:id="@+id/menu_button"
+            style="@style/DropDownMenuButton" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+           <!-- <Button
+                android:id="@+id/no_graph"
+                style="@style/SaveButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:drawableRight="@drawable/ic_next_item"
+                android:gravity="left"
+                android:text="@string/no_graph" >
+            </Button> -->
+
+            <!--<Button
+                android:id="@+id/co_graph"
+                style="@style/SaveButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:drawableRight="@drawable/ic_next_item"
+                android:gravity="left"
+                android:text="@string/co_graph" >
+            </Button>
+
+            <Button
+                android:id="@+id/temp_graph"
+                style="@style/SaveButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:drawableRight="@drawable/ic_next_item"
+                android:gravity="left"
+                android:text="@string/temp_graph" >
+            </Button>
+
+            <Button
+                android:id="@+id/humidity_graph"
+                style="@style/SaveButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:drawableRight="@drawable/ic_next_item"
+                android:gravity="left"
+                android:text="@string/humidity_graph" >
+            </Button>
+-->
+            <Button
+                android:id="@+id/questionnaire"
+                style="@style/SaveButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:drawableRight="@drawable/ic_next_item"
+                android:gravity="left"
+                android:text="@string/questionnaire" >
+            </Button>
+            <Button
+                    android:id="@+id/PopulaitonSignals"
+                    style="@style/SaveButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:drawableRight="@drawable/ic_next_item"
+                    android:gravity="left"
+                    android:text="@string/PopulaitonSignalsGraphs" >
+                </Button>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

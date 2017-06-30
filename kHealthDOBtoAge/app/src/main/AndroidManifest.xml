@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.knoesis.health"
+    android:versionCode="7"
+    android:versionName="1.2">
+
+    <uses-sdk
+        android:minSdkVersion="21"
+        android:targetSdkVersion="21" />
+
+    <uses-feature
+        android:name="android.hardware.bluetooth"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+
+    <application
+        android:name=".AsthmaApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+
+        <!--
+        <receiver android:name=".AlarmReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" >
+                </action>
+            </intent-filter>
+        </receiver>
+        -->
+
+        <activity
+            android:name=".Startup"
+            android:configChanges="orientation"
+            android:label="@string/app_name"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".HomeActivity"
+            android:configChanges="orientation"
+            android:label="@string/title_activity_home" />
+        <activity
+            android:name=".KHealthAsthmaParentActivity"
+            android:configChanges="orientation"
+            android:label="@string/title_activity_khelath_asthma_parent" />
+        <activity
+            android:name=".KHealthAsthmaAdminActivity"
+            android:configChanges="orientation"
+            android:label="Admin Preferences" />
+        <activity
+            android:name=".ObservationsActivity"
+            android:configChanges="orientation"
+            android:label="@string/title_activity_observations" />
+        <activity
+            android:name=".GraphActivity"
+            android:configChanges="orientation"
+            android:label="@string/title_activity_graph" />
+        <activity
+            android:name=".DeleteUser"
+            android:configChanges="orientation"
+            android:label="DeleteUser" />
+        <activity
+            android:name=".PreferencesActivity"
+            android:configChanges="orientation"
+            android:label="@string/title_activity_preferences" />
+        <activity
+            android:name=".HelpActivity"
+            android:label="@string/title_activity_help" />
+        <!--
+        <activity
+            android:name=".CustomDialog"
+            android:label="@string/title_activity_custom_dialog" >
+        </activity>
+        -->
+        <!--
+        <activity
+            android:name=".PersonalInformation"
+            android:label="@string/title_activity_personal_information" >
+        </activity> 
+        -->
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/title_activity_settings" />
+        <activity
+            android:name=".QuestionnaireActivity"
+            android:label="@string/title_activity_questionnaire" />
+        <!--
+        <activity
+            android:name=".Observation_NODE_NO"
+            android:label="@string/title_activity_observation__node__no" >
+        </activity>
+        -->
+        <activity
+            android:name=".ConnectionNodeOptions"
+            android:label="@string/title_activity_connection_node_options" />
+        <activity
+            android:name=".GraphSelectionActivity"
+            android:label="@string/title_activity_graph_selection" />
+        <activity
+            android:name=".AnalyticsActivity"
+            android:label="@string/title_activity_analytics" />
+        <!--
+        <activity
+            android:name=".QuestionnaireGraphActivity"
+            android:label="@string/title_activity_questionnaire_graph" >
+        </activity>
+        -->
+        <activity
+            android:name=".QuestionnaireGraphSelection"
+            android:label="@string/title_activity_questionnaire_graph_selection" />
+        <activity
+            android:name=".CommentsDisplay"
+            android:label="@string/title_activity_comments_display" />
+        <activity
+            android:name=".CreateUser"
+            android:label="@string/title_activity_create_user"
+            android:noHistory="true" />
+        <activity
+            android:name=".LongBronchodilators"
+            android:label="@string/longActingBroncodilators"
+            android:noHistory="false" />
+        <activity
+            android:name=".ShortBronchodilators"
+            android:label="@string/shortActingBroncodilators"
+            android:noHistory="false" />
+        <activity
+            android:name=".LoginScreenActivity"
+            android:label="@string/title_activity_login_screen"
+            android:noHistory="true" />
+        <activity
+            android:name=".ChangeUserActivity"
+            android:label="@string/title_activity_change_user"
+            android:noHistory="true" />
+        <activity
+            android:name=".AlarmSetupActivity"
+            android:label="@string/title_activity_alarm_setup" />
+
+        <!--
+        <receiver android:name=".AlarmSetter" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name=".AlarmService" >
+        </receiver>
+        -->
+        <receiver android:name=".AlarmReceiver" />
+
+        <activity
+            android:name=".NightQuestionsActivity"
+            android:label="@string/title_activity_night_questions" />
+        <activity
+            android:name=".DayQuestionOneActivity"
+            android:label="@string/title_activity_day_question_one" />
+        <activity
+            android:name=".DayQuestionTwoActivity"
+            android:label="@string/title_activity_day_question_two" />
+        <!--
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main" >
+        </activity>
+        -->
+        <activity
+            android:name=".SensorPhotosActivity"
+            android:label="@string/title_activity_sensor_photos" />
+        <activity
+            android:name=".DayQuestionThreeActivity"
+            android:label="@string/title_activity_day_question_three" />
+        <activity
+            android:name=".PopulationSignals"
+            android:label="@string/title_activity_gps_tracking"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PopulationSignalsGraphSelection"
+            android:label="@string/title_activity_population_signals_graph" />
+        <activity
+            android:name=".Observation_NODE_NEW"
+            android:label="@string/title_activity_observation__node__new"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ActivitySummary"
+            android:label="@string/title_activity_summary"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name="com.variable.framework.chroma.service.ChromaService"
+            android:exported="false"
+            android:process=".ChromaService">
+            <intent-filter>
+                <action android:name="com.variable.chroma.action.StartChromaService" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".ActivitySummaryAdmin"
+            android:label="@string/title_activity_summary_new"
+            android:screenOrientation="portrait" />
+
+        <!--
+        <activity
+            android:name=".Test_Node_Sensor_Readings"
+            android:label="@string/title_activity_test__node__sensor__readings" >
+        </activity>
+        -->
+        <activity
+            android:name=".AdminActivity"
+            android:label="LoginAsAdmin" />
+        <activity
+            android:name=".DayNightCurrentMenu"
+            android:label="@string/title_activity_day_night_current_menu" />
+        <activity
+            android:name=".Current_Questions_New"
+            android:label="@string/title_activity_current__questions__new" />
+        <activity
+            android:name=".Questionnaire_"
+            android:label="@string/title_activity_questionnaire_" />
+        <activity
+            android:name=".Day_Question_Zero"
+            android:label="@string/title_activity_day__question__zero" />
+        <activity
+            android:name=".Night_Question_Zero"
+            android:label="@string/title_activity_night__question__zero" />
+        <activity
+            android:name=".Current_Summary"
+            android:label="@string/title_activity_current__summary" />
+        <activity
+            android:name=".RewardsActivity"
+            android:label="@string/title_activity_rewards" />
+        <activity
+            android:name=".AdminSection"
+            android:label="@string/title_activity_admin_section" />
+        <activity
+            android:name=".AdminLogin"
+            android:label="@string/title_activity_admin_login" />
+        <activity android:name=".MedicationUsage" />
+        <activity
+            android:name=".UserSelection"
+            android:label="@string/title_activity_user_selection"
+            android:parentActivityName=".KHealthAsthmaParentActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.knoesis.health.KHealthAsthmaParentActivity" />
+        </activity>
+        <activity
+            android:name=".SpirometryCollection"
+            android:label="@string/title_activity_spirometry"
+            android:parentActivityName=".KHealthAsthmaParentActivity"
+            android:windowSoftInputMode="adjustResize"
+        />
+
+        <receiver android:name=".EmailSendingReceiver" />
+    </application>
+
+</manifest>

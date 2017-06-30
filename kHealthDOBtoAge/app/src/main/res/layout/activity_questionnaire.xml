@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFFFF"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        style="@style/TitleLayout"
+        android:layout_width="match_parent" >
+
+        <Button
+            android:id="@+id/home_button"
+            style="@style/home_button" />
+
+        <TextView
+            style="@style/TitleTextView"
+            android:text="@string/questionnaire" />
+
+        <Button
+            android:id="@+id/menu_button"
+            style="@style/DropDownMenuButton" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding_medium"
+                android:layout_marginRight="@dimen/padding_medium"
+                android:layout_marginTop="@dimen/padding_medium"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/coughLevel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/coughing_level"
+                    android:textColor="@color/blue_text"
+                    android:textSize="20sp" />
+
+                <Spinner
+                    android:id="@+id/coughLevelSpinner"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1" >
+                    <requestFocus/>
+             </Spinner>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding_medium"
+                android:layout_marginRight="@dimen/padding_medium"
+                android:layout_marginTop="@dimen/padding_medium"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/wakeFromSleep"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/wake_from_sleep"
+                    android:textColor="@color/blue_text"
+                    android:textSize="20sp" />
+
+                <Spinner
+                    android:id="@+id/wakeFromSleepSpinner"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:drawSelectorOnTop="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding_medium"
+                android:layout_marginRight="@dimen/padding_medium"
+                android:layout_marginTop="@dimen/padding_medium"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/wheezing"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/wheezing"
+                    android:textColor="@color/blue_text"
+                    android:textSize="20sp" />
+
+                <Spinner
+                    android:id="@+id/wheezingSpinner"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:drawSelectorOnTop="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding_medium"
+                android:layout_marginRight="@dimen/padding_medium"
+                android:layout_marginTop="@dimen/padding_medium"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/activtyLevel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/activity_level"
+                    android:textColor="@color/blue_text"
+                    android:textSize="20sp" />
+
+                <Spinner
+                    android:id="@+id/activtyLevelSpinner"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:drawSelectorOnTop="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding_medium"
+                android:layout_marginRight="@dimen/padding_medium"
+                android:layout_marginTop="@dimen/padding_medium"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/rescueInhaler"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rescue_inhaler"
+                    android:textColor="@color/blue_text"
+                    android:textSize="20sp" />
+
+                <Spinner
+                    android:id="@+id/rescueNumber"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:drawSelectorOnTop="true"  >
+                </Spinner>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding_medium"
+                android:layout_marginRight="@dimen/padding_medium"
+                android:layout_marginTop="@dimen/padding_medium"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/extra_comment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/extra_comment"
+                    android:textColor="@color/blue_text"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding_medium"
+                android:layout_marginRight="@dimen/padding_medium"
+                android:layout_marginTop="@dimen/padding_medium"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/comments"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:gravity="top|left"
+                    android:inputType="textMultiLine"
+                    android:lines="3"
+                    android:scrollbars="vertical" >
+
+                </EditText>
+                
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding_medium"
+                android:layout_marginRight="@dimen/padding_medium"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/submit"
+                    style="@style/SaveButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/submit" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

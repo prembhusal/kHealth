@@ -1,0 +1,394 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF" >
+
+    <LinearLayout
+        android:id="@+id/LinearLayout20"
+        style="@style/TitleLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+
+        <Button
+            android:id="@+id/home_button"
+            style="@style/home_button"
+            android:layout_weight="0.06" />
+
+        <TextView
+            style="@style/TitleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.10"
+            android:text="Rewards" />
+
+        <Button
+            android:id="@+id/menu_button"
+            style="@style/DropDownMenuButton"
+            android:layout_weight="0.03" />
+    </LinearLayout>
+ 
+
+<ImageView
+    android:id="@+id/imageViewMain"
+    android:layout_width="594dp"
+    android:layout_height="match_parent"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentTop="true"
+    android:alpha="128"
+    android:src="@drawable/nhaler5" />
+
+    <ImageView
+        android:id="@+id/imageView02"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="305dp"
+        android:layout_toLeftOf="@+id/ImageView01"
+        android:src="@drawable/fillingcoins" />
+
+    <ImageView
+        android:id="@+id/ImageView10"
+       android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imageView02"
+        android:layout_toLeftOf="@+id/imageView02"
+        android:src="@drawable/fillingcoins" />
+
+    <ImageView
+        android:id="@+id/ImageView04"
+       android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ImageView01"
+        android:layout_alignLeft="@+id/ImageView01"
+        android:src="@drawable/fillingcoins" />
+
+    <ImageView
+        android:id="@+id/ImageView05"
+       android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ImageView10"
+        android:layout_alignTop="@+id/ImageView01"
+        android:layout_marginLeft="17dp"
+        android:src="@drawable/fillingcoins" />
+
+    <ImageView
+        android:id="@+id/ImageView07"
+       android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ImageView02"
+        android:layout_toLeftOf="@+id/ImageView02"
+        android:src="@drawable/fillingcoins" />
+
+    <ImageView
+        android:id="@+id/ImageView14"
+       android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ImageView11"
+        android:layout_toRightOf="@+id/ImageView09"
+        android:src="@drawable/fillingcoins" />
+
+    <ImageView
+        android:id="@+id/ImageView15"
+       android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ImageView08"
+        android:layout_toRightOf="@+id/ImageView07"
+        android:src="@drawable/fillingcoins" />
+
+    <ImageView
+        android:id="@+id/ImageView09"
+       android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ImageView06"
+        android:layout_toRightOf="@+id/ImageView10"
+        android:src="@drawable/fillingcoins" />
+
+    <ImageView
+        android:id="@+id/ImageView25"
+       android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ImageView17"
+        android:layout_toLeftOf="@+id/ImageView17"
+        android:src="@drawable/fillingcoins" />
+
+    <ImageView
+        android:id="@+id/ImageView06"
+       android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ImageView10"
+        android:layout_alignRight="@+id/ImageView10"
+        android:layout_marginRight="19dp"
+        android:src="@drawable/fillingcoins" />
+
+    <ImageView
+        android:id="@+id/ImageView16"
+       android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ImageView05"
+        android:layout_below="@+id/ImageView18"
+        android:src="@drawable/fillingcoins" />
+
+    <ImageView
+        android:id="@+id/ImageView19"
+       android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ImageView18"
+        android:layout_toRightOf="@+id/ImageView16"
+        android:src="@drawable/fillingcoins" />
+
+    <ImageView
+        android:id="@+id/ImageView24"
+       android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/ImageView07"
+        android:layout_toRightOf="@+id/ImageView16"
+        android:src="@drawable/fillingcoins" />
+
+    <ImageView
+        android:id="@+id/ImageView11"
+       android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ImageView27"
+        android:layout_toRightOf="@+id/ImageView01"
+        android:src="@drawable/fillingcoins" />
+
+    <ImageView
+        android:id="@+id/ImageView34"
+       android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ImageView31"
+        android:layout_alignLeft="@+id/ImageView10"
+        android:src="@drawable/fillingcoins" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ImageView03"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="123dp"
+        android:alpha="128"
+        android:text="Earn more stars by answering questions everyday "
+        android:textColor="@color/blue_text"
+        android:textSize="25sp" />
+
+    <ImageView
+        android:id="@+id/ImageView02"
+       android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ImageView26"
+        android:layout_toRightOf="@+id/ImageView16"
+        android:src="@drawable/fillingcoins" />
+
+    <ImageView
+        android:id="@+id/ImageView29"
+       android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ImageView25"
+        android:layout_toLeftOf="@+id/ImageView34"
+        android:src="@drawable/fillingcoins" />
+
+    <ImageView
+        android:id="@+id/ImageView26"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ImageView14"
+        android:layout_toRightOf="@+id/ImageView09"
+        android:src="@drawable/fillingcoins" />
+
+    <ImageView
+        android:id="@+id/ImageView21"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ImageView14"
+        android:layout_toRightOf="@+id/ImageView06"
+        android:src="@drawable/fillingcoins" />
+
+    <ImageView
+        android:id="@+id/ImageView18"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ImageView14"
+        android:layout_toRightOf="@+id/ImageView20"
+        android:src="@drawable/fillingcoins" />
+
+    <ImageView
+        android:id="@+id/ImageView03"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ImageView01"
+        android:layout_toRightOf="@+id/ImageView13"
+        android:src="@drawable/fillingcoins" />
+
+    <ImageView
+        android:id="@+id/ImageView12"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ImageView27"
+        android:layout_toRightOf="@+id/ImageView03"
+        android:src="@drawable/fillingcoins" />
+
+    <ImageView
+        android:id="@+id/ImageView27"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ImageView09"
+        android:layout_toRightOf="@+id/ImageView01"
+        android:src="@drawable/fillingcoins" />
+
+    <ImageView
+        android:id="@+id/ImageView33"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ImageView22"
+        android:layout_toLeftOf="@+id/ImageView31"
+        android:src="@drawable/fillingcoins" />
+
+    <ImageView
+        android:id="@+id/ImageView17"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ImageView21"
+        android:layout_alignLeft="@+id/ImageView07"
+        android:src="@drawable/fillingcoins" />
+
+    <ImageView
+        android:id="@+id/ImageView23"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ImageView15"
+        android:layout_toRightOf="@+id/ImageView34"
+        android:src="@drawable/fillingcoins" />
+
+    <ImageView
+        android:id="@+id/ImageView13"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ImageView18"
+        android:layout_below="@+id/ImageView20"
+        android:src="@drawable/fillingcoins" />
+
+    <ImageView
+        android:id="@+id/ImageView20"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ImageView06"
+        android:layout_alignLeft="@+id/ImageView25"
+        android:src="@drawable/fillingcoins" />
+
+    <ImageView
+        android:id="@+id/ImageView08"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ImageView18"
+        android:layout_alignLeft="@+id/ImageView06"
+        android:src="@drawable/fillingcoins" />
+
+    <ImageView
+        android:id="@+id/ImageView30"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ImageView32"
+        android:layout_toRightOf="@+id/ImageView29"
+        android:src="@drawable/fillingcoins" />
+
+    <ImageView
+        android:id="@+id/ImageView31"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ImageView33"
+        android:layout_alignLeft="@+id/ImageView25"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/fillingcoins" />
+
+    <ImageView
+        android:id="@+id/ImageView22"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ImageView30"
+        android:layout_toLeftOf="@+id/ImageView08"
+        android:src="@drawable/fillingcoins" />
+
+    <ImageView
+        android:id="@+id/ImageView32"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ImageView23"
+        android:layout_toRightOf="@+id/ImageView08"
+        android:src="@drawable/fillingcoins" />
+
+    <ImageView
+        android:id="@+id/ImageView28"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ImageView04"
+        android:layout_alignLeft="@+id/ImageView12"
+        android:src="@drawable/fillingcoins" />
+
+    <ImageView
+        android:id="@+id/ImageView01"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ImageView12"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/fillingcoins" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="1000px"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/LinearLayout20"
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="47dp"
+        android:text="Congratulations you earned"
+        android:textColor="@color/blue_text"
+        android:textSize="25sp" />
+
+    <Button
+        style="@style/SaveButton"
+        android:id="@+id/btn_finish"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:text="@string/str_finish"
+        android:onClick="onClick"
+    />
+</RelativeLayout>

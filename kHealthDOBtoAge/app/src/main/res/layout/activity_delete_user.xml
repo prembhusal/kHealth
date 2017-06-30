@@ -1,0 +1,35 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="left"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".LoginScreenActivity" >
+
+     <RelativeLayout
+        style="@style/TitleLayout"
+        android:layout_width="match_parent" >
+
+        <Button
+            android:id="@+id/home_button"
+            style="@style/home_button" />
+
+        <TextView
+            style="@style/TitleTextView"
+            android:text="Delete User" />
+
+        <Button
+            android:id="@+id/menu_button"
+            style="@style/DropDownMenuButton" />
+    </RelativeLayout>
+
+
+    <ListView
+        android:id="@+id/currentUsers"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="left" >
+    </ListView>
+
+</LinearLayout>

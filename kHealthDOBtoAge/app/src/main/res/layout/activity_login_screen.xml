@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="left"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".LoginScreenActivity">
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout1"
+        style="@style/TitleLayout"
+        android:layout_width="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/TextView1"
+                style="@style/CustomTitleTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="@string/login"
+                android:textAlignment="center"
+                android:textSize="30sp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/loginAsAdmin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/login_button"
+        android:drawableRight="@drawable/ic_add_new"
+        android:text="@string/login"
+        android:textColor="@color/white"
+        android:textSize="24sp" />
+
+    <ListView
+        android:id="@+id/currentUsers"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="left"></ListView>
+
+</LinearLayout>

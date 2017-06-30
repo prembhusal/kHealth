@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout style="@style/TitleLayout" >
+
+        <Button
+            android:id="@+id/home_button"
+            style="@style/home_button" />
+
+        <TextView
+            style="@style/TitleTextView"
+            android:layout_centerVertical="true"
+            
+            android:layout_toRightOf="@+id/home_button"
+            android:gravity="center_horizontal"
+            android:text="Current Symptoms " />
+        
+        <Button
+            android:id="@+id/menu_button"
+            style="@style/DropDownMenuButton" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding_medium"
+        android:layout_marginRight="@dimen/padding_medium"
+        android:layout_marginTop="@dimen/padding_medium"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/inhalerUsedAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/CurrentSympQuestion"
+            android:textColor="@color/blue_text"
+            android:textSize="25sp" />
+    </LinearLayout>
+    <ScrollView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fadeScrollbars="false" >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+        
+<LinearLayout android:layout_width="wrap_content"
+    		  android:layout_height="wrap_content"
+    		  android:orientation="vertical"
+    		  android:layout_marginTop="10dp"	
+    		  android:background="@drawable/yellow_zone_gradient" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+         >
+
+        <CheckBox
+            android:id="@+id/RB_Cough"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:checked="false"
+            android:text="Cough"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp" />
+
+        <CheckBox
+            android:id="@+id/RB_Wheeze"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Wheeze"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp" />
+
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+        
+        <CheckBox
+            android:id="@+id/RB_CT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Chest Tightness"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp" />
+        
+        <CheckBox
+            android:id="@+id/RB_HF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Hard and Fast Breathing"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp" />
+        
+        <CheckBox
+            android:id="@+id/RB_NOW"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Nose Opens Wide"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp" />
+        
+        <CheckBox
+            android:id="@+id/RB_CTF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Can&apos;t Talk in full sentences"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp" />
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         >
+
+        
+
+        
+
+    </LinearLayout>
+</LinearLayout>
+    <CheckBox
+        android:id="@+id/RB_Other"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Other"
+        android:textColor="#33B5E5"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/other_comments"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:ems="10"
+        android:gravity="top|left"
+        android:inputType="textMultiLine"
+        android:lines="4"
+        android:scrollbars="vertical"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/current_Next"
+        style="@style/SaveButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:drawableRight="@drawable/ic_next_item"
+        android:text="Next" />
+
+    <Button
+        android:id="@+id/submitCQ"
+        style="@style/SaveButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:drawableRight="@drawable/ic_next_item"
+        android:text="@string/submit"
+        android:visibility="gone" />
+    </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

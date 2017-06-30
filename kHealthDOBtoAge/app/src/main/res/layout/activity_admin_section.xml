@@ -1,0 +1,242 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="left"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".LoginScreenActivity" >
+
+    <LinearLayout
+        android:id="@+id/LinearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_main_height"
+        android:background="@drawable/blue_gradient"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.45" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.83"
+                android:text="Admin Preferences"
+                android:textAlignment="center"
+                android:gravity="center_vertical"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/menu_button"
+            style="@style/DropDownMenuButton"
+            android:layout_weight="0.06"
+            android:gravity="center_vertical" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/DeploymentButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Deployment dates"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:id="@+id/LinearLayoutDates"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/StartLL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/custom_border__summary_headings"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/SummaryText"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.25"
+                android:gravity="center_vertical|center"
+                android:text="Start date"
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+
+            <DatePicker
+                android:id="@+id/date_start"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/EndLL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/custom_border__summary_headings"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/SummaryText"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.25"
+                android:gravity="center_vertical|center"
+                android:text="End date"
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+
+            <DatePicker
+                android:id="@+id/date_end"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="horizontal" 
+             android:background="@drawable/custom_border__summary_headings" >
+
+            <TextView
+                style="@style/SummaryText"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.61"
+                android:text="								Difference"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:layout_margin="10dp" />
+
+            <TextView
+                android:id="@+id/tvDifference"
+                android:layout_width="0dp"
+                android:layout_height="38dp"
+                android:layout_weight="0.34"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/saveDepDates"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.35"
+                android:text="Save" 
+                android:layout_margin="10dp">
+
+            </Button>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/emailButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Email Preferences"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:id="@+id/EmailLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textViewPhoneNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="To : "
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <EditText
+            android:id="@+id/editTextTo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress" >
+
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:id="@+id/textViewSubject"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Subject : "
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <EditText
+            android:id="@+id/editTextSubject"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+        </EditText>
+
+        <TextView
+            android:id="@+id/textViewCC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cc : "
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <EditText
+            android:id="@+id/editTextCC"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+        </EditText>
+
+        <TextView
+            android:id="@+id/textViewNOD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Unanswered # of days? (Condition for the doctor to be notified)"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <EditText
+            android:id="@+id/editTextNOD"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+        </EditText>
+
+        <TextView
+            android:id="@+id/textViewMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Message : "
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <EditText
+            android:id="@+id/editTextMessage"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:inputType="textMultiLine"
+            android:lines="5"
+            android:text="" />
+
+        <Button
+            android:id="@+id/buttonSave"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Save" />
+    </LinearLayout>
+
+</LinearLayout>
+</ScrollView>

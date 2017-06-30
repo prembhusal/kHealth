@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFFFF"
+    android:orientation="vertical" >
+    
+   
+    <RelativeLayout
+       style="@style/TitleLayout">
+
+        <Button
+            android:id="@+id/home_button"
+            style="@style/home_button" />
+
+        <TextView
+            style="@style/TitleTextView"
+            android:text="@string/connection_options_unit_preferences"/>
+
+    </RelativeLayout>
+  
+    
+   		 <ScrollView 
+   		    android:layout_width="fill_parent"
+   			android:layout_height="wrap_content" >
+    
+			 <LinearLayout
+	        android:id="@+id/prefLayout"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical" >
+
+   			 </LinearLayout>
+   		     
+		   
+			
+		</ScrollView>
+  
+
+</TableLayout>
